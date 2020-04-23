@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Web3 from 'web3';
+import { Abi } from './Abi.js';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const web3 = new Web3(Web3.givenProvider);
+
+const contractAddress = "0xEe...";
+const SpotifyContract = new web3.eth.Contract(Abi, contractAddress);
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">

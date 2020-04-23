@@ -6,9 +6,14 @@ Entity: Yve Vestal Titan(an alias_)
 > npm install -g truffle
 
 > truffle init
+> truffle compile
 > truffle develop
 > truffle develop --log
 > migrate
+
+Dependencies: 
+- npm install
+    - web3
 Subgraphs:
 
 Ropsten 
